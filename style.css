@@ -1,0 +1,77 @@
+body {
+    background-color: lightgreen;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+input {
+    margin-top: 10px;
+}
+
+.f1 {
+    /* box_model */
+    border: 1px solid (253, 33, 4, 0.667);
+    padding: 1cm;
+    margin: 1cm;
+    /* margin-left: 0cm; */
+    margin-bottom: 0.5cm;
+    border-radius: 1cm;
+}
+
+.f2 {
+    /* box_model */
+    border: 1px solid (253, 33, 4, 0.667);
+    padding: 1cm;
+    margin: 1cm;
+    /* margin-left: 0cm; */
+    margin-bottom: 0.5cm;
+    border-radius: 1cm;
+}
+
+.container4 {
+    background-color: aqua;
+    flex: 2;
+    border: 1px solid rgba(253, 33, 4, 0.667);
+    padding: 1cm;
+    margin: 1cm;
+    /* margin-left: 0cm; */
+    margin-bottom: 0.5cm;
+    border-radius: 1cm;
+}
+
+.container3 {
+    background-color: chartreuse;
+    flex: 3;
+    border: 1px solid rgba(253, 33, 4, 0.667);
+    padding: 1cm;
+    margin: 1cm;
+    /* margin-left: 0cm; */
+    margin-bottom: 0.5cm;
+    border-radius: 1cm;
+}
+
+.container2 {
+    background-color: gold;
+    flex: 1;
+    border: 1px solid rgba(253, 33, 4, 0.667);
+    padding: 1cm;
+    margin: 1cm;
+    /* margin-left: 0cm; */
+    margin-bottom: 0.5cm;
+    border-radius: 1cm;
+}
+
+.container1 {
+    background-color: cornflowerblue;
+    flex: 1;
+    border: 1px solid rgba(253, 33, 4, 0.667);
+    padding: 1cm;
+    margin: 1cm;
+    /* margin-left: 0cm; */
+    margin-bottom: 0.5cm;
+    border-radius: 1cm;
+}
