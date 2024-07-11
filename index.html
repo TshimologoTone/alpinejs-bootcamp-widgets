@@ -13,6 +13,7 @@
         <div class="container1" x-data="greetWidget()">
             <h1>AlpineJS Greet Widget</h1>
             <input x-model="neighbourName" type="text" placeholder="Enter name">
+            <button @click="greet">Greet</button>
             <p x-text="greet()"></p>
         </div>
     
@@ -24,6 +25,7 @@
                 <option value="afternoon">Afternoon</option>
                 <option value="nightshift">Nightshift</option>
             </select>
+            <button @click="fee">Fee</button>
             <p x-text="transportFee(shift)"></p>
         </div>
     </div>
@@ -32,6 +34,7 @@
         <div class="container3" x-data="wordGameWidget()">
             <h1>Word Game Widget</h1>
             <textarea x-model="sentence" placeholder="Enter a sentence"></textarea>
+            <button @click="operate">Operate</button>
             <p><strong>Longest Word:</strong> <span x-text="longestWord(sentence)"></span></p>
             <p><strong>Shortest Word:</strong> <span x-text="shortestWord(sentence)"></span></p>
             <p><strong>Total Word Lengths:</strong> <span x-text="wordLengths(sentence)"></span></p>
