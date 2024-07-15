@@ -3,57 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlpineJS Bootcamp Widgets</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Welcome Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>AlpineJS Bootcamp Widgets</h1>
-    <script src="index.js" defer></script>
-    <div class="f1">
-        <div class="container1" x-data="greetWidget()">
-            <h1>AlpineJS Greet Widget</h1>
-            <input x-model="neighbourName" type="text" placeholder="Enter name">
-            <p x-text="greet()"></p>
-        </div>
-    
-        <div class="container2" x-data="transportWidget()">
-            <h1>Transport Fee Widget</h1>
-            <select x-model="shift">
-                <option value="">Select shift</option>
-                <option value="morning">Morning</option>
-                <option value="afternoon">Afternoon</option>
-                <option value="nightshift">Nightshift</option>
-            </select>
-            <p x-text="transportFee(shift)"></p>
+<body class="bg-black flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded shadow-md max-w-md w-full mx-auto">
+        <h1 class="text-3xl font-semibold mb-6 text-center">Welcome to AlpineJS widgets for Bootcamp functions</h1>
+        
+        <div class="grid grid-cols-1 gap-4">
+            <a href="./enoughAirtimeFunction.html" class="block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded text-center">Enough Airtime Function</a>
+            <a href="./greetFunction.html" class="block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded text-center">Greet Function</a>
+            <a href="./totalPhoneBillFunction.html" class="block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded text-center">Total Bill Function</a>
+            <a href="./transportFeeFunction.html" class="block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded text-center">Transport Fee Function</a>
         </div>
     </div>
-    
-    <div class="f2">
-        <div class="container3" x-data="wordGameWidget()">
-            <h1>Word Game Widget</h1>
-            <textarea x-model="sentence" placeholder="Enter a sentence"></textarea>
-            <p><strong>Longest Word:</strong> <span x-text="longestWord(sentence)"></span></p>
-            <p><strong>Shortest Word:</strong> <span x-text="shortestWord(sentence)"></span></p>
-            <p><strong>Total Word Lengths:</strong> <span x-text="wordLengths(sentence)"></span></p>
-        </div>
-
-        <div class="container4" x-data="itemsWidget()">
-            <h1>Expensive Items Widget</h1>
-            <input type="number" x-model.number="threshold" placeholder="Enter threshold">
-            <button @click="findItems">Find Items</button>
-            <ul>
-                <template x-for="item in filteredItems" :key="item.name + item.qty">
-                    <li x-text="`${item.name} (${item.qty})`"></li>
-                </template>
-            </ul>
-            <p><strong>Items over 20:</strong></p>
-            <ul>
-                <template x-for="item in itemsOver20" :key="item.name + item.qty">
-                    <li x-text="`${item.name} (${item.qty})`"></li>
-                </template>
-            </ul>
-        </div>
-    </div>
-
 </body>
-</html>
+</html
